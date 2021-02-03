@@ -14,10 +14,8 @@ object Basics extends App {
    * @param b second arg
    * @return least common multiple of two agrs
    */
-  def lcmSimple(a: Int, b: Int): Int = (a % b, b % a) match {
-    case (0, _) => a
-    case (_, 0) => b
-    case _ => a * b
+  def lcmSimple(a: Int, b: Int): Int = {
+    ((1 to a).toSet.map { m: Int => m * b } intersect (1 to b).toSet.map { m: Int => m * a }).min
   }
 
   /**
@@ -38,6 +36,11 @@ object Basics extends App {
   }
 
   // task 2 - gcd
+
+  def gcdSimple(a: Int, b: Int): Int = (a, b) match {
+    case (a, 0) => a
+    case _ => gcd(b, a % b)
+  }
 
   /**
    * Improved version of gcd function with 1..n arguments.
