@@ -24,10 +24,7 @@ object DataStructures extends App {
 
   // https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
   def kidsWithCandies(candies: Vector[Int], extraCandies: Int): Vector[Boolean] =
-    candies.map { currentCandies =>
-      if (currentCandies + extraCandies < candies.max) false
-      else true
-    }
+    candies.map { currentCandies => currentCandies + extraCandies >= candies.max }
 
   println(kidsWithCandies(Vector(2, 3, 5, 1, 3), 3))
   println(kidsWithCandies(Vector(4, 2, 1, 1, 2), 1))
