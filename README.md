@@ -5,5 +5,6 @@ Completed tasks:
 - [X] 2.Classes and traits
 - [X] 3.Control structures
 - [X] 4.Data structures / collections
-- [ ] 5.ADT
+- [X] 5.ADT
+- [ ] 5.SBT
     
