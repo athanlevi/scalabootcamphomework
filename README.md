@@ -7,5 +7,6 @@ Completed tasks:
 - [x] 4.Data structures / collections
 - [x] 5.ADT
 - [x] 6.SBT
-- [ ] 7.Implicits
+- [x] 7.Implicits
+- [ ] 8.HKT
     
