@@ -8,5 +8,6 @@ Completed tasks:
 - [x] 5.ADT
 - [x] 6.SBT
 - [x] 7.Implicits
-- [ ] 8.HKT
+- [x] 8.HKT
+- [x] 9.Error handling
     
